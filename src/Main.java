@@ -14,10 +14,12 @@ void main() {
         System.out.println("welcome admin");
     } else if (txt.equalsIgnoreCase("superuser")) {
         System.out.println("welcome superuser ");
-    } else {
+    } else if(txt.equalsIgnoreCase("user")){
         System.out.println("welcome user ");
     }
-
+    else{
+        System.out.println(" no result");
+    }
 //2.Take three numbers from the user and print the greatest number.
 //        Test Data
 //Input the 1st number: 25
@@ -47,7 +49,7 @@ System.out.println("enter num 1");
 //    number: 4
 //    Expected Output:
 //    Wednesday
-    System.out.println("enter day number " +
+    System.out.println(" day number " +
             "   1 for Sunday " +
             "   2 for Monday"+
             "   3 for Tuesday "+
@@ -55,7 +57,8 @@ System.out.println("enter num 1");
             "   5 for Thursday"+
             "   6 for Friday"+
           "   7 for Saturday"  );
-int day=input.nextInt();
+
+int day=(int) (Math.random()*7);
         switch (day){
             case 1 :
                 System.out.println("Sunday");
@@ -96,7 +99,7 @@ int day=input.nextInt();
 //    Letter Grade: B
     System.out.println("your numeric score");
     int x=input.nextInt();
-    if (x>=90){
+    if (x>=90&&x<+100){
         System.out.println("your letter grade is A");
     }
          else if (x>=80) {
@@ -109,8 +112,11 @@ int day=input.nextInt();
     else if (x>=60) {
         System.out.println("your letter grade is D");
     }
-    else  {
+    else if(x<=59&&x>0) {
         System.out.println("your letter grade is F");
+    }
+    else {
+        System.out.println("wrong value!!!!!!1");
     }
 
 //    5.
