@@ -99,7 +99,7 @@ int day=(int) (Math.random()*7);
 //    Letter Grade: B
     System.out.println("your numeric score");
     int x=input.nextInt();
-    if (x>=90&&x<+100){
+    if (x>=90&&x<=100){
         System.out.println("your letter grade is A");
     }
          else if (x>=80) {
